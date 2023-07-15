@@ -1,0 +1,459 @@
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgba(91, 92, 106, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 999;
+  animation: modal 300ms ease-in-out;
+}
+.modal-bottom {
+  transition: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+}
+.modal-bottom__card {
+  padding: 10px;
+  position: relative;
+}
+.modal-bottom__card__back {
+  width: 35px;
+  height: 35px;
+  background: rgba(67, 82, 99, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.modal-bottom__card__back svg,
+.modal-bottom__card__back path {
+  stroke: white;
+  margin-left: -2px;
+  height: 25px;
+  width: 25px;
+}
+.modal-bottom__card__block {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-bottom__card__img {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.modal-bottom__card__price {
+  margin-top: 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #8f64eb;
+}
+.modal-bottom__card__text {
+  margin-top: 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #242638;
+}
+.modal-bottom__card__btn {
+  padding: 16px;
+  width: 100%;
+  background: #8f64eb;
+  border-radius: 50px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.modal-bottom__order {
+  padding: 15px 10px;
+  position: relative;
+}
+.modal-bottom__close {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.modal-bottom__border {
+  padding-bottom: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid #e3e8eb;
+}
+.modal-bottom__address__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.modal-bottom__address__flex label {
+  width: 90%;
+}
+.modal-bottom__address input[type=radio] + label {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #8f64eb;
+  border-radius: 50%;
+  padding: 4px;
+  display: block;
+  transition: all;
+  position: relative;
+}
+.modal-bottom__address input[type=radio] + label::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background: transparent;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 300ms;
+  position: relative;
+}
+.modal-bottom__address input[type=radio]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background: #8f64eb;
+  border-radius: 50%;
+  display: block;
+  border: 1px solid #8f64eb;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-bottom__date {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.modal-bottom__date__flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: scroll;
+}
+.modal-bottom__date input[type=radio] + label {
+  background: #e0e2e4;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  transition: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.modal-bottom__date input[type=radio] + label p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  color: #878ea6;
+  white-space: nowrap;
+}
+.modal-bottom__date input[type=radio]:checked + label {
+  background: #8f64eb;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.modal-bottom__date input[type=radio]:checked + label p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+.modal-bottom__time input[type=radio] + label {
+  background: #e0e2e4;
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  transition: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.modal-bottom__time input[type=radio] + label p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  color: #878ea6;
+  white-space: nowrap;
+}
+.modal-bottom__time input[type=radio]:checked + label {
+  background: #8f64eb;
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.modal-bottom__time input[type=radio]:checked + label p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+.modal-bottom__pay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.modal-bottom__pay__left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+.modal-bottom__pay__left svg,
+.modal-bottom__pay__left path {
+  width: 35px;
+  height: 30px;
+}
+.modal-bottom__pay__right input[type=radio] + label {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #8f64eb;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all;
+  transition-duration: 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-bottom__pay__right input[type=radio] + label svg,
+.modal-bottom__pay__right input[type=radio] + label path {
+  width: 17px;
+  height: 17px;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 0%;
+  transition: all;
+  transition-duration: 300ms;
+}
+.modal-bottom__pay__right input[type=radio]:checked + label {
+  background: #8f64eb;
+}
+.modal-bottom__pay__right input[type=radio]:checked + label svg,
+.modal-bottom__pay__right input[type=radio]:checked + label path {
+  width: 17px;
+  height: 17px;
+  stroke-dasharray: 0%;
+  stroke-dashoffset: 10;
+}
+.modal-bottom__pay__right input[type=checkbox] + label {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #8f64eb;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all;
+  transition-duration: 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-bottom__pay__right input[type=checkbox] + label svg,
+.modal-bottom__pay__right input[type=checkbox] + label path {
+  width: 17px;
+  height: 17px;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 0%;
+  transition: all;
+  transition-duration: 300ms;
+}
+.modal-bottom__pay__right input[type=checkbox]:checked + label {
+  background: #8f64eb;
+}
+.modal-bottom__pay__right input[type=checkbox]:checked + label svg,
+.modal-bottom__pay__right input[type=checkbox]:checked + label path {
+  width: 17px;
+  height: 17px;
+  stroke-dasharray: 0%;
+  stroke-dashoffset: 10;
+}
+.modal-bottom__bonus {
+  margin: 15px 0;
+}
+.modal-bottom__bonuses {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 15px 0;
+}
+.modal-bottom__bonuses svg,
+.modal-bottom__bonuses path {
+  width: 17px;
+  height: 17px;
+}
+.modal-bottom__order__btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background: #8f64eb;
+  border-radius: 50px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.modal-bottom__status__name {
+  margin: 10px 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  color: #494e58;
+}
+.modal-bottom__status__text {
+  margin: 10px 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.08px;
+  color: #737489;
+}
+.modal-bottom__status__flex {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-bottom__status__one {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #e3e6ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-bottom__status__one svg,
+.modal-bottom__status__one path {
+  stroke: #bfc4d1;
+  height: 25px;
+  width: 25px;
+  fill: #bfc4d1;
+}
+.modal-bottom__status__one__active {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #8f64eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-bottom__status__one__active svg,
+.modal-bottom__status__one__active path {
+  stroke: #8f64eb;
+  height: 25px;
+  width: 25px;
+}
+.modal-bottom__status__phone {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background: #8f64eb;
+  border-radius: 50px;
+  padding: 15px 0;
+}
+.modal-bottom__status__support {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #494e58;
+  background: #e9eaeb;
+  border-radius: 50px;
+  padding: 15px 0;
+}
+
+@keyframes modal {
+  0% {
+    opacity: 0%;
+    background: transparent;
+  }
+  100% {
+    opacity: 100%;
+    background: rgba(91, 92, 106, 0.5);
+  }
+}/*# sourceMappingURL=modal.css.map */

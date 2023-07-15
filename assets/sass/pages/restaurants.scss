@@ -1,0 +1,249 @@
+.restaurants {
+  padding-bottom: 50px;
+  &-header {
+    position: relative;
+    width: 100%;
+    height: 253px;
+    &__flex {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 10px;
+    }
+    &__btn {
+      background: white;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  &-absolute {
+    position: relative;
+
+    &__left {
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: 6px solid #8f64eb;
+      left: 10px;
+      overflow: hidden;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+    &__right {
+      position: absolute;
+      right: 50px;
+      top: 0;
+      &__block {
+        position: relative;
+      }
+      &__text {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 13px;
+        text-align: center;
+        color: #ffffff;
+        z-index: 1;
+      }
+    }
+  }
+  &-section {
+    padding-top: 80px;
+  }
+  &-main {
+    &__flex {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &__text {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      color: #242638;
+    }
+    &__info {
+      margin: 10px 0;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 15px;
+      svg {
+        width: 20px;
+        height: auto;
+      }
+      &__text {
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 13px;
+        color: #242638;
+      }
+    }
+  }
+  &-bottom {
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px -1px 3px rgba(180, 187, 203, 0.35);
+    width: 100%;
+    z-index: 10;
+    &__relative {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    &__icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &__sale {
+      text-align: center;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: -0.24px;
+      color: #8f64eb;
+    }
+    &__price {
+      margin-top: 5px;
+      text-align: center;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 14px;
+
+      text-align: center;
+      letter-spacing: -0.24px;
+
+      color: #7e7e87;
+    }
+  }
+  &-slider {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+    .swiper-slide {
+      transition: all;
+      transition-duration: 300ms;
+    }
+    .swiper-slide-active {
+      background: #8f64eb;
+      .restaurants-slide__text {
+        color: #ffffff !important;
+      }
+    }
+  }
+  &-slide {
+    padding: 7px 15px;
+    background: transparent;
+    border-radius: 20px;
+    display: flex !important;
+    align-items: center !important;
+    width: fit-content !important;
+    gap: 5px;
+    &__text {
+      white-space: nowrap;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #22242f;
+    }
+  }
+  &-food {
+    padding: 10px 0;
+    border-bottom: 1px solid #e3e8eb;
+    &__flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__name {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #22242f;
+      text-align: start;
+      width: 100%;
+    }
+    &__price {
+      width: 100%;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 12px;
+      color: #8f64eb;
+      text-align: start;
+    }
+    &__desc {
+      width: 100%;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      color: #75798d;
+      text-align: start;
+    }
+    &__img {
+      width: 110px;
+      height: 73px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+    &__width {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 73px;
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.header {
+  padding: 15px 0;
+  position: relative;
+  &-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__address {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #465167;
+    }
+  }
+  &-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    color: #292d35;
+  }
+}

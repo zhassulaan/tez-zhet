@@ -1,0 +1,52 @@
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.-rotate-90 {
+  transform: rotate(-90deg);
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.p-10 {
+  padding: 10px;
+  width: 100%;
+}
+
+.py-15 {
+  padding: 15px 0;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.-ml-2 {
+  margin-left: -2px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.my-15 {
+  margin: 15px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.favourite_active:focus {
+  & svg,
+  path {
+    fill: #8f64eb;
+  }
+}

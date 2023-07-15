@@ -1,0 +1,239 @@
+.cart-items {
+  border-bottom: 1px solid #e3e8eb;
+}
+.cart-items__one {
+  margin: 15px 0;
+}
+.cart-items__flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+.cart-items__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 73px;
+  width: 70%;
+}
+.cart-items__img {
+  width: 77px;
+  height: 77px;
+  border-radius: 5px;
+}
+.cart-items__name {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #22242f;
+  display: block;
+  width: 100%;
+}
+.cart-items__price {
+  display: block;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8f64eb;
+}
+.cart-items__text {
+  display: block;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  color: #75798d;
+}
+.cart-items__trash {
+  padding: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cart-items__btn {
+  max-width: 100px;
+  margin: 10px auto;
+}
+.cart-items__menu {
+  padding: 14px 45px;
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 25px auto;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.08px;
+  color: #3d3e4f;
+}
+.cart-cutlery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.cart-cutlery__left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cart-cutlery input[type=checkbox] + label {
+  width: 37px;
+  height: 22px;
+  border-radius: 50px;
+  background: #d3dadc;
+  transition: all;
+  transition-duration: 300ms;
+  position: relative;
+}
+.cart-cutlery input[type=checkbox]:checked + label {
+  background: #8f64eb;
+}
+.cart-cutlery input[type=checkbox] + label::after {
+  content: "";
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  transform: translateY(-50%);
+  transition: all;
+  transition-duration: 200ms;
+}
+.cart-cutlery input[type=checkbox]:checked + label::after {
+  right: 4px !important;
+}
+.cart-buy__btns {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #e0e2e4;
+  border-radius: 8px;
+  justify-content: space-between;
+  padding: 3px;
+}
+.cart-buy__btns input[type=radio] + label {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.08px;
+  color: #8e919b;
+}
+.cart-buy__btns input[type=radio] + label {
+  padding: 5px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: all;
+  transition-duration: 300ms;
+}
+.cart-buy__btns input[type=radio]:checked + label {
+  padding: 5px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.08px;
+  color: #3d3e4f;
+}
+.cart-buy__info {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e3e8eb;
+}
+.cart-buy__flex {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-buy__text {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #22242f;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cart-buy__text svg,
+.cart-buy__text path {
+  margin-top: -2px;
+  width: 15px;
+  height: 15px;
+}
+.cart-buy__price {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #22242f;
+}
+.cart-buy__btn {
+  margin: 20px 0;
+  padding: 15px;
+  text-align: center;
+  background: #8f64eb;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  border-radius: 50px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.08px;
+  color: #ffffff;
+}
+.cart-buy__h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.08px;
+  color: #3d3e4f;
+}/*# sourceMappingURL=cart.css.map */

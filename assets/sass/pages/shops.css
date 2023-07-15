@@ -1,0 +1,229 @@
+.shops-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #8f64eb;
+  border-radius: 30px;
+  padding: 14px;
+}
+.shops-btn__text {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.shops-new {
+  margin: 20px 0;
+  padding: 0 10px;
+}
+.shops-new__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.shops-new__weight {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #636470;
+}
+.shops-new__info {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 10px;
+  color: #9aa1ae;
+}
+.shops-new__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 10px 0;
+  gap: 10px;
+}
+.shops-new__one {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(147, 157, 185, 0.35);
+  border-radius: 15px;
+  grid-column: span 1/span 1;
+  overflow: hidden;
+  padding: 5px;
+}
+.shops-new__block {
+  height: 60px;
+  overflow: hidden;
+}
+.shops-new__img {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.shops-new__price {
+  margin-top: 5px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #8f64eb;
+  text-align: start;
+}
+.shops-new__name {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 5px;
+  font-size: 10px;
+  line-height: 13px;
+  color: #242638;
+  height: 25px;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
+}
+.shops-new__btn {
+  margin-top: 10px;
+  width: 100%;
+  background: #8f64eb;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shops-new__btn svg,
+.shops-new__btn path {
+  width: 25px;
+  height: 25px;
+  stroke: #ffffff;
+  fill: stroke;
+}
+.shops-new__cart {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #8f64eb;
+  border-radius: 30px;
+  padding: 2px 5px;
+}
+.shops-new__cart__btn svg,
+.shops-new__cart__btn path {
+  margin-left: -3px;
+  margin-bottom: -3px;
+  stroke: #8f64eb;
+  fill: #8f64eb;
+  height: 22px;
+  width: 22px;
+}
+.shops-new__cart__count {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #8f64eb;
+}
+.shops-sections {
+  padding: 0 10px;
+  margin: 15px 0;
+}
+.shops-sections__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 10px 0;
+  gap: 10px;
+}
+.shops-sections__one {
+  grid-column: span 1/span 1;
+  filter: drop-shadow(0px 2px 3px rgba(147, 157, 185, 0.35));
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100px;
+  position: relative;
+}
+.shops-sections__img {
+  width: 100%;
+  height: 100%;
+}
+.shops-sections__bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shops-sections__name {
+  text-align: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 12px;
+  color: #242638;
+}
+.shops-one__list {
+  margin: 15px 0;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.shops-one__btn {
+  flex: 1;
+  flex-grow: 1;
+  padding: 7px 15px;
+  background: #f1f2f3;
+  border-radius: 20px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  white-space: nowrap;
+  text-align: center;
+  color: #22242f;
+  transition: all;
+  transition-duration: 300ms;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.shops-one__btn__active {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px 15px;
+  background: #8f64eb;
+  border-radius: 20px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+  transition: all;
+  transition-duration: 300ms;
+}/*# sourceMappingURL=shops.css.map */

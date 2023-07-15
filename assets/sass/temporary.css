@@ -1,0 +1,24 @@
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.-rotate-90 {
+  transform: rotate(-90deg);
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.p-10 {
+  padding: 10px;
+  width: 100%;
+}
+
+.-ml-2 {
+  margin-left: -2px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}/*# sourceMappingURL=temporary.css.map */
